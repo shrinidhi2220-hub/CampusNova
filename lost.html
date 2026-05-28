@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+CampusNova Lost Items
+</title>
+
+<link rel="stylesheet"
+href="lost.css">
+
+<link rel="stylesheet"
+href="global.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- GLOWS -->
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar glass">
+
+<h2 class="logo">
+
+Campus<span>Nova</span>
+
+</h2>
+
+<ul class="menu">
+
+<li>
+
+<a href="dashboard.html">
+
+🏠 Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="feed.html">
+
+⚡ Live Feed
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="lost.html">
+
+🔍 Lost Items
+
+</a>
+
+</li>
+
+<li>
+
+<a href="found.html">
+
+🎒 Found Items
+
+</a>
+
+</li>
+
+<li>
+
+<a href="index.html">
+
+🚪 Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main-content">
+
+<!-- TOPBAR -->
+
+<div class="topbar">
+
+<div>
+
+<h1>
+
+Lost Items Recovery 🔍
+
+</h1>
+
+<p>
+
+AI-powered intelligent recovery ecosystem
+
+</p>
+
+</div>
+
+<a href="#reportLost"
+class="magic-btn upload-btn">
+
+📝 Report Lost Item
+
+</a>
+
+</div>
+
+<!-- SEARCH -->
+
+<section class="search-section glass magic-card">
+
+<input
+type="text"
+placeholder="Search lost items...">
+
+<div class="filter-buttons">
+
+<button class="filter-btn active">
+
+All
+
+</button>
+
+<button class="filter-btn">
+
+Electronics
+
+</button>
+
+<button class="filter-btn">
+
+Bags
+
+</button>
+
+<button class="filter-btn">
+
+ID Cards
+
+</button>
+
+<button class="filter-btn">
+
+Accessories
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ITEMS GRID -->
+
+<section class="items-grid">
+
+<!-- CARD -->
+
+<div class="item-card glass magic-card"
+data-category="electronics">
+
+<div class="item-icon">
+
+💻
+
+</div>
+
+<h3>
+
+HP Laptop
+
+</h3>
+
+<p>
+
+Lost near Innovation Block
+
+</p>
+
+<div class="item-info">
+
+<span>
+
+2 mins ago
+
+</span>
+
+<span class="ai-match">
+
+AI Match: 94%
+
+</span>
+
+</div>
+
+<button class="claim-btn">
+
+View Details
+
+</button>
+
+</div>
+
+<!-- CARD -->
+
+<div class="item-card glass magic-card"
+data-category="bags">
+
+<div class="item-icon">
+
+🎒
+
+</div>
+
+<h3>
+
+Black Backpack
+
+</h3>
+
+<p>
+
+Last seen near cafeteria
+
+</p>
+
+<div class="item-info">
+
+<span>
+
+10 mins ago
+
+</span>
+
+<span class="ai-match">
+
+AI Match: 81%
+
+</span>
+
+</div>
+
+<button class="claim-btn">
+
+View Details
+
+</button>
+
+</div>
+
+<!-- CARD -->
+
+<div class="item-card glass magic-card"
+data-category="id">
+
+<div class="item-icon">
+
+🪪
+
+</div>
+
+<h3>
+
+Student ID Card
+
+</h3>
+
+<p>
+
+Lost near Library Floor 2
+
+</p>
+
+<div class="item-info">
+
+<span>
+
+22 mins ago
+
+</span>
+
+<span class="ai-match">
+
+Verified
+
+</span>
+
+</div>
+
+<button class="claim-btn">
+
+View Details
+
+</button>
+
+</div>
+
+<!-- CARD -->
+
+<div class="item-card glass magic-card"
+data-category="accessories">
+
+<div class="item-icon">
+
+⌚
+
+</div>
+
+<h3>
+
+Apple Watch
+
+</h3>
+
+<p>
+
+Missing near Seminar Hall
+
+</p>
+
+<div class="item-info">
+
+<span>
+
+40 mins ago
+
+</span>
+
+<span class="ai-match">
+
+AI Match: 88%
+
+</span>
+
+</div>
+
+<button class="claim-btn">
+
+View Details
+
+</button>
+
+</div>
+
+</section>
+
+<!-- AI SECTION -->
+
+<section class="ai-section">
+
+<div class="section-title">
+
+<h2>
+
+🤖 AI Recovery Insights
+
+</h2>
+
+</div>
+
+<div class="ai-grid">
+
+<div class="ai-box glass magic-card">
+
+<h3>
+
+98.2%
+
+</h3>
+
+<p>
+
+Recovery Accuracy
+
+</p>
+
+</div>
+
+<div class="ai-box glass magic-card">
+
+<h3>
+
+24/7
+
+</h3>
+
+<p>
+
+Realtime Monitoring
+
+</p>
+
+</div>
+
+<div class="ai-box glass magic-card">
+
+<h3>
+
+LIVE
+
+</h3>
+
+<p>
+
+Auto Match Detection
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REPORT SECTION -->
+
+<section
+id="reportLost"
+class="report-section glass magic-card">
+
+<h2>
+
+🚨 Report Lost Item
+
+</h2>
+
+<p>
+
+Submit your lost item information to the CampusNova AI recovery network.
+
+</p>
+
+<form class="report-form">
+
+<div class="input-grid">
+
+<div class="input-box">
+
+<label>
+
+Student Name
+
+</label>
+
+<input
+type="text"
+placeholder="Enter your name">
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+SRN
+
+</label>
+
+<input
+type="text"
+placeholder="Enter SRN">
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+Phone Number
+
+</label>
+
+<input
+type="text"
+placeholder="Enter phone number">
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+Item Name
+
+</label>
+
+<input
+type="text"
+placeholder="Lost item name">
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+Category
+
+</label>
+
+<select>
+
+<option>
+
+Electronics
+
+</option>
+
+<option>
+
+Bags
+
+</option>
+
+<option>
+
+ID Cards
+
+</option>
+
+<option>
+
+Accessories
+
+</option>
+
+</select>
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+Lost Location
+
+</label>
+
+<input
+type="text"
+placeholder="Where did you lose it?">
+
+</div>
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+Description
+
+</label>
+
+<textarea
+placeholder="Describe the item clearly..."></textarea>
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+Upload Image
+
+</label>
+
+<input type="file">
+
+</div>
+
+<button
+type="submit"
+class="magic-btn submit-btn">
+
+Submit Lost Report
+
+</button>
+
+</form>
+
+</section>
+
+</main>
+<footer class="global-footer">
+
+<div class="footer-brand">
+
+✨ Built with vision by
+<span>NidHi 🚀</span>
+
+</div>
+
+<div class="footer-links">
+
+<a href="index.html">
+
+🏠 Home
+
+</a>
+
+<a href="feed.html">
+
+📡 Feed
+
+</a>
+
+<a href="lost.html">
+
+🔍 Lost
+
+</a>
+
+<a href="found.html">
+
+🎒 Found
+
+</a>
+
+</div>
+
+<div class="footer-status">
+
+<div class="footer-dot"></div>
+
+CampusNova AI Systems Active
+
+</div>
+
+<div
+class="footer-clock"
+id="footerClock">
+
+00:00:00
+
+</div>
+
+</footer>
+
+<script src="lost.js"></script>
+
+</body>
+</html>
