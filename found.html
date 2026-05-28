@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+CampusNova Found Items
+</title>
+
+<link rel="stylesheet"
+href="found.css">
+
+<link rel="stylesheet"
+href="global.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- GLOWS -->
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar glass">
+
+<h2 class="logo">
+
+Campus<span>Nova</span>
+
+</h2>
+
+<ul class="menu">
+
+<li>
+
+<a href="dashboard.html">
+
+🏠 Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="feed.html">
+
+⚡ Live Feed
+
+</a>
+
+</li>
+
+<li>
+
+<a href="lost.html">
+
+🔍 Lost Items
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="found.html">
+
+🎒 Found Items
+
+</a>
+
+</li>
+
+<li>
+
+<a href="index.html">
+
+🚪 Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main-content">
+
+<!-- TOPBAR -->
+
+<div class="topbar">
+
+<div>
+
+<h1>
+
+Found Items Database 🎒
+
+</h1>
+
+<p>
+
+AI-powered smart recovery center
+
+</p>
+
+</div>
+
+<a href="#reportFound"
+class="magic-btn upload-btn">
+
+📝 Submit Found Item
+
+</a>
+
+</div>
+
+<!-- SEARCH -->
+
+<section class="search-section glass magic-card">
+
+<input
+type="text"
+placeholder="Search found items...">
+
+<div class="filter-buttons">
+
+<button class="filter-btn active">
+
+All
+
+</button>
+
+<button class="filter-btn">
+
+Electronics
+
+</button>
+
+<button class="filter-btn">
+
+Bags
+
+</button>
+
+<button class="filter-btn">
+
+ID Cards
+
+</button>
+
+<button class="filter-btn">
+
+Accessories
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ITEMS GRID -->
+
+<section class="items-grid">
+
+<!-- CARD -->
+
+<div class="item-card glass magic-card"
+data-category="electronics">
+
+<div class="item-icon">
+
+💻
+
+</div>
+
+<h3>
+
+Dell Laptop
+
+</h3>
+
+<p>
+
+Found near AI Lab Block
+
+</p>
+
+<div class="item-info">
+
+<span>
+
+2 mins ago
+
+</span>
+
+<span class="verified">
+
+Verified
+
+</span>
+
+</div>
+
+<button class="claim-btn">
+
+Claim Item
+
+</button>
+
+</div>
+
+<!-- CARD -->
+
+<div class="item-card glass magic-card"
+data-category="bags">
+
+<div class="item-icon">
+
+🎒
+
+</div>
+
+<h3>
+
+Grey Backpack
+
+</h3>
+
+<p>
+
+Submitted to Admin Office
+
+</p>
+
+<div class="item-info">
+
+<span>
+
+12 mins ago
+
+</span>
+
+<span class="verified">
+
+Secure
+
+</span>
+
+</div>
+
+<button class="claim-btn">
+
+Verify Ownership
+
+</button>
+
+</div>
+
+<!-- CARD -->
+
+<div class="item-card glass magic-card"
+data-category="id cards">
+
+<div class="item-icon">
+
+🪪
+
+</div>
+
+<h3>
+
+Student ID Card
+
+</h3>
+
+<p>
+
+Recovered near Library
+
+</p>
+
+<div class="item-info">
+
+<span>
+
+18 mins ago
+
+</span>
+
+<span class="verified">
+
+AI Match
+
+</span>
+
+</div>
+
+<button class="claim-btn">
+
+Claim Securely
+
+</button>
+
+</div>
+
+<!-- CARD -->
+
+<div class="item-card glass magic-card"
+data-category="accessories">
+
+<div class="item-icon">
+
+⌚
+
+</div>
+
+<h3>
+
+Smart Watch
+
+</h3>
+
+<p>
+
+Found near Seminar Hall
+
+</p>
+
+<div class="item-info">
+
+<span>
+
+40 mins ago
+
+</span>
+
+<span class="verified">
+
+Protected
+
+</span>
+
+</div>
+
+<button class="claim-btn">
+
+Verify Identity
+
+</button>
+
+</div>
+
+</section>
+
+<!-- AI SECTION -->
+
+<section class="ai-section">
+
+<div class="section-title">
+
+<h2>
+
+🤖 AI Recovery System
+
+</h2>
+
+</div>
+
+<div class="ai-grid">
+
+<div class="ai-box glass magic-card">
+
+<h3>
+
+99.1%
+
+</h3>
+
+<p>
+
+Claim Verification Accuracy
+
+</p>
+
+</div>
+
+<div class="ai-box glass magic-card">
+
+<h3>
+
+24/7
+
+</h3>
+
+<p>
+
+Realtime AI Monitoring
+
+</p>
+
+</div>
+
+<div class="ai-box glass magic-card">
+
+<h3>
+
+LIVE
+
+</h3>
+
+<p>
+
+Secure Recovery Network
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REPORT SECTION -->
+
+<section
+id="reportFound"
+class="report-section glass magic-card">
+
+<h2>
+
+🎒 Submit Found Item
+
+</h2>
+
+<p>
+
+Help students recover belongings through the CampusNova secure verification system.
+
+</p>
+
+<form class="report-form">
+
+<div class="input-grid">
+
+<div class="input-box">
+
+<label>
+
+Finder Name
+
+</label>
+
+<input
+type="text"
+placeholder="Enter your name">
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+SRN
+
+</label>
+
+<input
+type="text"
+placeholder="Enter SRN">
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+Found Item
+
+</label>
+
+<input
+type="text"
+placeholder="Item name">
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+Found Location
+
+</label>
+
+<input
+type="text"
+placeholder="Where was it found?">
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+Category
+
+</label>
+
+<select>
+
+<option>
+
+Electronics
+
+</option>
+
+<option>
+
+Bags
+
+</option>
+
+<option>
+
+ID Cards
+
+</option>
+
+<option>
+
+Accessories
+
+</option>
+
+</select>
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+Security Question
+
+</label>
+
+<input
+type="text"
+placeholder="Question for claimant">
+
+</div>
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+Description
+
+</label>
+
+<textarea
+placeholder="Describe found item details..."></textarea>
+
+</div>
+
+<div class="input-box">
+
+<label>
+
+Upload Image
+
+</label>
+
+<input type="file">
+
+</div>
+
+<button
+type="submit"
+class="magic-btn submit-btn">
+
+Submit Found Item
+
+</button>
+
+</form>
+
+</section>
+
+</main>
+<footer class="global-footer">
+
+<div class="footer-brand">
+
+✨ Built with vision by
+<span>NidHi 🚀</span>
+
+</div>
+
+<div class="footer-links">
+
+<a href="index.html">
+
+🏠 Home
+
+</a>
+
+<a href="feed.html">
+
+📡 Feed
+
+</a>
+
+<a href="lost.html">
+
+🔍 Lost
+
+</a>
+
+<a href="found.html">
+
+🎒 Found
+
+</a>
+
+</div>
+
+<div class="footer-status">
+
+<div class="footer-dot"></div>
+
+CampusNova AI Systems Active
+
+</div>
+
+<div
+class="footer-clock"
+id="footerClock">
+
+00:00:00
+
+</div>
+
+</footer>
+
+<script src="found.js"></script>
+
+</body>
+</html>

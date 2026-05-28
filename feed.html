@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+CampusNova Feed
+</title>
+
+<link rel="stylesheet"
+href="feed.css">
+
+<link rel="stylesheet"
+href="global.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- GLOWS -->
+
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar glass">
+
+<h2 class="logo">
+
+Campus<span>Nova</span>
+
+</h2>
+
+<ul class="menu">
+
+<li>
+
+<a href="dashboard.html">
+
+🏠 Dashboard
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="feed.html">
+
+⚡ Live Feed
+
+</a>
+
+</li>
+
+<li>
+
+<a href="lost.html">
+
+🔍 Lost Items
+
+</a>
+
+</li>
+
+<li>
+
+<a href="found.html">
+
+🎒 Found Items
+
+</a>
+
+</li>
+
+<li>
+
+<a href="index.html">
+
+🚪 Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</aside>
+
+<!-- MAIN -->
+
+<main class="main-content">
+
+<!-- TOPBAR -->
+
+<div class="topbar">
+
+<div>
+
+<h1>
+
+Campus Live Feed ⚡
+
+</h1>
+
+<p>
+
+Realtime campus updates and announcements
+
+</p>
+
+</div>
+
+<button class="magic-btn">
+
+📡 Feed Active
+
+</button>
+
+</div>
+
+<!-- CREATE POST -->
+
+<section class="create-post glass magic-card">
+
+<h2>
+
+Create Campus Update 🚀
+
+</h2>
+
+<textarea
+placeholder="Share campus updates, alerts or announcements..."></textarea>
+
+<div class="post-actions">
+
+<button class="secondary-btn">
+
+📷 Upload
+
+</button>
+
+<button
+id="publishBtn"
+class="magic-btn">
+
+Publish Update
+
+</button>
+
+</div>
+
+</section>
+
+<!-- FEED GRID -->
+
+<section class="feed-grid">
+
+<!-- LEFT FEED -->
+
+<div class="feed-left">
+
+<!-- POST -->
+
+<div class="post-card glass magic-card">
+
+<div class="post-top">
+
+<div class="user">
+
+<div class="avatar">
+
+A
+
+</div>
+
+<div>
+
+<h3>
+
+Admin Office
+
+</h3>
+
+<p>
+
+2 mins ago
+
+</p>
+
+</div>
+
+</div>
+
+<span class="live-tag">
+
+LIVE
+
+</span>
+
+</div>
+
+<div class="post-content">
+
+<h2>
+
+📢 Campus Parking Update
+
+</h2>
+
+<p>
+
+Parking near Block C is temporarily restricted
+due to ongoing maintenance. Students are advised
+to use the east parking zone.
+
+</p>
+
+</div>
+
+<div class="post-stats">
+
+<span>
+
+❤️ 124 Likes
+
+</span>
+
+<span>
+
+💬 31 Comments
+
+</span>
+
+<span>
+
+📤 12 Shares
+
+</span>
+
+</div>
+
+</div>
+
+<!-- POST -->
+
+<div class="post-card glass magic-card">
+
+<div class="post-top">
+
+<div class="user">
+
+<div class="avatar">
+
+S
+
+</div>
+
+<div>
+
+<h3>
+
+Student Council
+
+</h3>
+
+<p>
+
+12 mins ago
+
+</p>
+
+</div>
+
+</div>
+
+<span class="event-tag">
+
+EVENT
+
+</span>
+
+</div>
+
+<div class="post-content">
+
+<h2>
+
+🎉 TechFest 2026 Registrations Open
+
+</h2>
+
+<p>
+
+Join the biggest AI & innovation fest on campus.
+Hackathons, startup showcases and realtime coding battles await.
+
+</p>
+
+</div>
+
+<div class="post-stats">
+
+<span>
+
+🔥 Trending
+
+</span>
+
+<span>
+
+💬 87 Comments
+
+</span>
+
+<span>
+
+🚀 Viral
+
+</span>
+
+</div>
+
+</div>
+
+<!-- POST -->
+
+<div class="post-card glass magic-card">
+
+<div class="post-top">
+
+<div class="user">
+
+<div class="avatar">
+
+AI
+
+</div>
+
+<div>
+
+<h3>
+
+CampusNova AI
+
+</h3>
+
+<p>
+
+20 mins ago
+
+</p>
+
+</div>
+
+</div>
+
+<span class="ai-tag">
+
+AI
+
+</span>
+
+</div>
+
+<div class="post-content">
+
+<h2>
+
+🤖 AI Match Detected
+
+</h2>
+
+<p>
+
+A lost smartwatch reported yesterday has
+been matched with a newly found item
+near the library area.
+
+</p>
+
+</div>
+
+<div class="post-stats">
+
+<span>
+
+🧠 Smart Detection
+
+</span>
+
+<span>
+
+⚡ Auto Verification
+
+</span>
+
+<span>
+
+🔍 Recovery Pending
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT SIDEBAR -->
+
+<div class="feed-right">
+
+<!-- TRENDING -->
+
+<div class="widget glass magic-card">
+
+<h2>
+
+🔥 Trending
+
+</h2>
+
+<div class="trend-item">
+
+<span>
+
+#TechFest2026
+
+</span>
+
+<small>
+
+4.2k mentions
+
+</small>
+
+</div>
+
+<div class="trend-item">
+
+<span>
+
+#LostAndFound
+
+</span>
+
+<small>
+
+1.8k mentions
+
+</small>
+
+</div>
+
+<div class="trend-item">
+
+<span>
+
+#CampusAI
+
+</span>
+
+<small>
+
+980 mentions
+
+</small>
+
+</div>
+
+</div>
+
+<!-- EVENTS -->
+
+<div class="widget glass magic-card">
+
+<h2>
+
+📅 Upcoming Events
+
+</h2>
+
+<div class="event-item">
+
+<h3>
+
+AI Workshop
+
+</h3>
+
+<p>
+
+Tomorrow • Seminar Hall
+
+</p>
+
+</div>
+
+<div class="event-item">
+
+<h3>
+
+Hackathon
+
+</h3>
+
+<p>
+
+Saturday • Innovation Center
+
+</p>
+
+</div>
+
+<div class="event-item">
+
+<h3>
+
+Startup Meetup
+
+</h3>
+
+<p>
+
+Next Week • Auditorium
+
+</p>
+
+</div>
+
+</div>
+
+<!-- AI STATUS -->
+
+<div class="widget glass magic-card">
+
+<h2>
+
+🤖 AI System
+
+</h2>
+
+<div class="system-box">
+
+<h3>
+
+98.2%
+
+</h3>
+
+<p>
+
+Realtime Detection Accuracy
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+<footer class="global-footer">
+
+<div class="footer-brand">
+
+✨ Built with vision by
+<span>NidHi 🚀</span>
+
+</div>
+
+<div class="footer-links">
+
+<a href="index.html">
+
+🏠 Home
+
+</a>
+
+<a href="feed.html">
+
+📡 Feed
+
+</a>
+
+<a href="lost.html">
+
+🔍 Lost
+
+</a>
+
+<a href="found.html">
+
+🎒 Found
+
+</a>
+
+</div>
+
+<div class="footer-status">
+
+<div class="footer-dot"></div>
+
+CampusNova AI Systems Active
+
+</div>
+
+<div
+class="footer-clock"
+id="footerClock">
+
+00:00:00
+
+</div>
+
+</footer>
+
+<script src="feed.js"></script>
+
+</body>
+</html>

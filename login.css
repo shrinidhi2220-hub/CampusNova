@@ -1,0 +1,358 @@
+body{
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:30px;
+
+}
+
+/* CONTAINER */
+
+.login-container{
+
+width:100%;
+max-width:1400px;
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(350px,1fr));
+
+gap:35px;
+
+}
+
+/* PANELS */
+
+.login-left,
+.login-right{
+
+padding:60px;
+
+border-radius:35px;
+
+}
+
+/* LEFT */
+
+.brand h1{
+
+font-size:64px;
+
+margin-bottom:25px;
+
+}
+
+.brand span{
+
+color:#06B6D4;
+
+}
+
+.brand p{
+
+line-height:2;
+
+font-size:17px;
+
+color:#cbd5e1;
+
+margin-bottom:50px;
+
+}
+
+/* STATS */
+
+.left-stats{
+
+display:flex;
+gap:25px;
+
+margin-bottom:40px;
+
+}
+
+.stat-box{
+
+flex:1;
+
+padding:28px;
+
+border-radius:24px;
+
+text-align:center;
+
+}
+
+.stat-box h2{
+
+font-size:42px;
+
+margin-bottom:10px;
+
+}
+
+/* AI STATUS */
+
+.ai-status{
+
+padding:18px 22px;
+
+border-radius:20px;
+
+display:flex;
+align-items:center;
+gap:14px;
+
+font-size:15px;
+
+}
+
+.pulse{
+
+width:14px;
+height:14px;
+
+border-radius:50%;
+
+background:#22c55e;
+
+box-shadow:
+0 0 20px #22c55e;
+
+animation:pulse 2s infinite;
+
+}
+
+/* RIGHT */
+
+.login-right h2{
+
+font-size:42px;
+
+margin-bottom:15px;
+
+}
+
+.login-right p{
+
+color:#94a3b8;
+
+margin-bottom:35px;
+
+}
+
+/* FORM */
+
+#loginForm{
+
+display:flex;
+flex-direction:column;
+gap:25px;
+
+}
+
+/* INPUT */
+
+.input-box{
+
+display:flex;
+flex-direction:column;
+
+}
+
+.input-box label{
+
+margin-bottom:12px;
+
+font-size:15px;
+
+}
+
+.input-box input,
+.input-box select{
+
+padding:18px;
+
+border:none;
+outline:none;
+
+border-radius:18px;
+
+background:
+rgba(255,255,255,0.05);
+
+border:
+1px solid rgba(255,255,255,0.08);
+
+color:white;
+
+font-size:15px;
+
+}
+
+/* PASSWORD */
+
+.password-box{
+
+display:flex;
+align-items:center;
+
+background:
+rgba(255,255,255,0.05);
+
+border:
+1px solid rgba(255,255,255,0.08);
+
+border-radius:18px;
+
+overflow:hidden;
+
+}
+
+.password-box input{
+
+flex:1;
+
+border:none;
+
+background:none;
+
+}
+
+.password-box button{
+
+width:60px;
+height:60px;
+
+border:none;
+
+background:none;
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+}
+
+/* OPTIONS */
+
+.options{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+font-size:14px;
+
+}
+
+.options a{
+
+text-decoration:none;
+
+color:#06B6D4;
+
+}
+
+.remember{
+
+display:flex;
+align-items:center;
+gap:10px;
+
+}
+
+/* BUTTON */
+
+.login-btn{
+
+width:100%;
+
+font-size:16px;
+
+margin-top:10px;
+
+}
+
+/* SECURITY */
+
+.security-box{
+
+margin-top:30px;
+
+padding:20px;
+
+border-radius:20px;
+
+text-align:center;
+
+font-size:14px;
+
+}
+
+/* ANIMATION */
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+opacity:1;
+}
+
+50%{
+transform:scale(1.2);
+opacity:0.7;
+}
+
+100%{
+transform:scale(1);
+opacity:1;
+}
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.login-left,
+.login-right{
+
+padding:40px 30px;
+
+}
+
+.brand h1{
+
+font-size:48px;
+
+}
+
+.login-right h2{
+
+font-size:34px;
+
+}
+
+.left-stats{
+
+flex-direction:column;
+
+}
+
+.options{
+
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+
+}
+
+}
